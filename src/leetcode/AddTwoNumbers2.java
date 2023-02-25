@@ -1,6 +1,6 @@
 package leetcode;
 
-public class AddTwoNumbers {
+public class AddTwoNumbers2 {
     /**
      * Definition for singly-linked list.
      * public class ListNode {

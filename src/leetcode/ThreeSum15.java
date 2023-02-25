@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class ThreeSum {
+public class ThreeSum15 {
 
     public List<List<Integer>> threeSum_TwoPointer(int[] nums) {
         ArrayList<List<Integer>> ans = new ArrayList<>();
