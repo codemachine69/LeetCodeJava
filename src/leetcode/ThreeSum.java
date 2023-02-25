@@ -31,16 +31,16 @@ public class ThreeSum {
         HashSet<List<Integer>> ans = new HashSet<>();
         for (int i = 0; i < nums.length - 1; i++) {
             int target = -nums[i];
-            HashSet<Integer> hm = new HashSet<>();
+            HashSet<Integer> hs = new HashSet<>();
             for (int j = i + 1; j < nums.length; j++) {
-                if (hm.contains(target - nums[j])) {
+                if (hs.contains(target - nums[j])) {
                     ArrayList<Integer> temp = new ArrayList<>();
                     temp.add(nums[i]);
                     temp.add(nums[j]);
                     temp.add(target - nums[j]);
                     Collections.sort(temp);
                     ans.add(temp);
-                } else hm.add(nums[j]);
+                } else hs.add(nums[j]);
             }
         }
         return new ArrayList<List<Integer>>(ans);
