@@ -5,8 +5,7 @@ import java.util.HashSet;
 
 public class IntersectionOfTwoArrays349 {
     boolean bs(int[] arr, int target) {
-        int l = 0;
-        r = arr.length - 1;
+        int l = 0, r = arr.length - 1;
         while (l <= r) {
             int mid = l + (r - l) / 2;
             if (arr[mid] == target) return true;
