@@ -43,6 +43,6 @@ public class IntersectionOfTwoArrays349 {
                 hs.add(nums1[i]); i++; j++;
             }
         }
-        return hs.stream().mapToInt(i -> i).toArray();
+        return hs.stream().mapToInt(x -> x).toArray();
     }
 }
