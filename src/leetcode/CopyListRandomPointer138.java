@@ -3,7 +3,7 @@ package leetcode;
 import java.util.HashMap;
 
 public class CopyListRandomPointer138 {
-    HashMap<Node, Node> hm = new HashMap<>(); //used only for recursive approach
+    HashMap<Node, Node> hm = new HashMap<>();
 
     public Node copyRandomList(Node head) {
         if(head == null) return head;
