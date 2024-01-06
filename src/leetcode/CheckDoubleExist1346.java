@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class ChackDoubleExist1346 {
+public class CheckDoubleExist1346 {
     public boolean checkIfExist_bs(int[] arr) {
         Arrays.sort(arr);
         for (int i = 0; i < arr.length; i++) {
