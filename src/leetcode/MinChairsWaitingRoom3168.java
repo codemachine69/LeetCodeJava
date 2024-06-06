@@ -5,12 +5,7 @@ public class MinChairsWaitingRoom3168 {
         int max = 0, count = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'E') {
-                count++;
-            } else {
-                count--;
-            }
-
+            count = s.charAt(i) == 'E' ? count + 1 : count - 1;
             max = Math.max(max, count);
         }
 
