@@ -13,7 +13,6 @@ public class IsGraphBipartite785 {
         while (!q.isEmpty()) {
             int node = q.poll();
 
-
             for (int neighbor : graph[node]) {
                 if (color[neighbor] == -1) {
                     color[neighbor] = 1 - color[node];
