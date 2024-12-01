@@ -4,23 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RightViewBT199 {
-    int maxLevel;
-    List<Integer> arr;
-
     public List<Integer> rightSideView(TreeNode root) {
-        maxLevel = 0;
-        arr = new ArrayList<>();
-        helper(root, 1);
-        return arr;
+        List<Integer> ls = new ArrayList<>();
+        helper(root, ls, 0);
+        return ls;
     }
 
-    void helper(TreeNode root, int level) {
-        if (root == null) return;
-        if (level > maxLevel) {
-            arr.add(root.val);
-            maxLevel = level;
-        }
-        helper(root.right, level + 1);
-        helper(root.left, level + 1);
+    private void helper(TreeNode node, List<Integer> ls, int level) {
+        if (node == null) return;
+        if (ls.size() == level) ls.add(node.val);
+        helper(node.right, ls, level + 1);
+        helper(node.left, ls, level + 1);
     }
 }
