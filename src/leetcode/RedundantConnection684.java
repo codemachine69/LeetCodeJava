@@ -1,3 +1,5 @@
+package leetcode;
+
 public class RedundantConnection684 {
     public int[] findRedundantConnection(int[][] edges) {
         int n = edges.length;
